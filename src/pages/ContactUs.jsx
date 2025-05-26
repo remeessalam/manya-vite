@@ -1,11 +1,9 @@
-import React, { lazy } from "react";
+import { lazy } from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { companyDetails } from "../constant";
 import { Link } from "react-router-dom";
 const PageBanner = lazy(() => import("../components/website/PageBanner"));
 const LeadForm = lazy(() => import("../components/LeadForm"));
-
-// const MapComponent = lazy(() => import("../components/website/MapComponent"));
 
 const ContactUs = () => {
   return (
@@ -55,16 +53,7 @@ const ContactUs = () => {
           <LeadForm />
         </div>
       </div>
-      {/* <div className="mt-[3rem] relative"> */}
-      {/* <div
-          data-aos="fade-up"
-          className="p-7 flex gap-2 bg-white absolute rounded-b-xl left-0 translate-x-1/2 sm:right-[2rem] sm:translate-x-0 top-0 z-10 text-black min-w-[22rem] max-w-[22rem]"
-        >
-          <MapPin strokeWidth={1.5} size={20} className="inline min-w-5 mt-1" />{" "}
-          <span className="text-sm">{companyDetails.address}</span>
-        </div> */}
-      {/* <MapComponent /> */}
-      {/* </div> */}
+
       <WebsiteFooter />
     </>
   );
