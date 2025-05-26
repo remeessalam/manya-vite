@@ -845,19 +845,19 @@ export const allServices = [
 // portfolio images (web development)
 export const webPortfolio = [
   {
-    id: 1,
+    id: 11,
     img: FiveGHomesImg,
     title: "5g Homes",
     link: "https://5ghighspeedinternet.co",
   },
   {
-    id: 3,
+    id: 13,
     img: ColdCreekcapImg,
     title: "Cold Creekcap",
     link: "https://www.coldcreekcap.com",
   },
   {
-    id: 9,
+    id: 19,
     img: ThinkRealityImg,
     title: "Think Reality",
     link: "https://thinkrealty.ae",
@@ -879,31 +879,31 @@ export const webPortfolio = [
 // portfolio images (app development)
 export const appPortfolio = [
   {
-    id: 1,
+    id: 13345,
     img: AkashMegaMartApp,
     title: "Akash Mega Mart Mobile App",
     link: "https://play.google.com/store/apps/details?id=com.app.akash_mega_mart",
   },
   {
-    id: 2,
+    id: 24,
     img: FeelItMobileApp,
     title: "FeelIt Mobile App",
     link: "https://play.google.com/store/apps/details?id=com.feelit.feelit_app",
   },
   {
-    id: 3,
+    id: 35,
     img: KlikomicsMobileApp,
     title: "Klikomics Mobile App",
     link: "https://play.google.com/store/apps/details?id=com.klikomics.android&pcampaignid=web_share",
   },
   {
-    id: 4,
+    id: 4342,
     img: AutoSnapMobileApp,
     title: "AutoSnap Mobile App",
     link: "https://play.google.com/store/apps/details?id=com.Zigna.AutoSnap&pcampaignid=web_share",
   },
   {
-    id: 8,
+    id: 8452,
     img: RentopBikeAndCarImgapp,
     title: "Rentop Bike and Car",
     link: "https://play.google.com/store/apps/details?id=com.rentop&pcampaignid=web_share",

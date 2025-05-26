@@ -68,12 +68,12 @@ const WebsiteHeader = () => {
               href={logoImg}
               as="image"
               type="image/webp"
-              crossorigin="anonymous"
+              // crossorigin="anonymous"
             />
           </Helmet>
           <Link
             aria-label="Home"
-            smooth={true}
+            // smooth={true}
             to="/"
             className="cursor-pointer"
           >
@@ -103,8 +103,8 @@ const WebsiteHeader = () => {
             <Link
               to="/contact-us"
               className="primary-btn"
-              spy={true}
-              smooth={true}
+              // spy={true}
+              // smooth={true}
               offset={-60}
               duration={1000}
               aria-label={`Navigate to Contact page`}
@@ -128,10 +128,10 @@ const WebsiteHeader = () => {
             </button>
           </div>
           <div className="flex flex-col gap-6">
-            {routes.map(({ name, path, id }) => (
+            {routes.map(({ name, path }) => (
               <Link
                 onClick={() => setIsOpen(false)}
-                key={id}
+                key={name}
                 className="sm:text-3xl text-white font-medium transition-colors duration-300 link"
                 to={path}
                 aria-label={`Navigate to ${name} page`}

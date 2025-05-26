@@ -4,18 +4,17 @@ import {
   BrowserRouter as Router,
   Routes,
 } from "react-router-dom";
+import { lazy, Suspense } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 import SpinnerContextProvider, {
   LoadingSpinnerContext,
 } from "./components/SpinnerContext";
-import { lazy, Suspense } from "react";
 import { LoadingSpinner } from "./components/LoadingSpinner";
 import ScrollToTop from "./components/ScrollToTop";
 import WhatsAppIcon from "./components/WhatsAppIcon";
 import { Toaster } from "react-hot-toast";
-import ServiceDetails from "./pages/ServiceDetails";
-import TermsAndConditions from "./pages/TermsandCondition";
 
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const ThankYou = lazy(() => import("./pages/ThankYou"));
@@ -24,6 +23,8 @@ const ContactUs = lazy(() => import("./pages/ContactUs"));
 const Home = lazy(() => import("./pages/Home"));
 const Services = lazy(() => import("./pages/Services"));
 const Blogs = lazy(() => import("./pages/Blogs"));
+const ServiceDetails = lazy(() => import("./pages/ServiceDetails"));
+const TermsAndConditions = lazy(() => import("./pages/TermsandCondition"));
 
 AOS.init({
   once: true,
