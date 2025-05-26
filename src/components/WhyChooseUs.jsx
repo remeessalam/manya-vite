@@ -76,7 +76,7 @@ const WhyChooseUs = () => {
                   <img
                     loading="lazy"
                     src={item.icon}
-                    alt=""
+                    alt={`why choose us image-${index}`}
                     className="w-[3.5rem] fill-white h-[3.5rem] transition-all duration-200"
                   />
                   {/* <item.icon className="w-[3.5rem] fill-white h-[3.5rem] transition-all duration-200" /> */}
