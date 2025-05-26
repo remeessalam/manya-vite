@@ -67,63 +67,7 @@ const Home = () => {
           </p>
         </div>
       </section>
-      {/* <div
-        data-aos="fade-up"
-        className="md:-mt-[7rem] py-[2rem] relative z-10 max-w-6xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-3 gap-5"
-      >
-        <div className="bg-[#0A1828] rounded-lg p-5">
-          <div className="flex gap-3 mb-4">
-            <img
-              loading="lazy"
-              src={icon1}
-              width="50"
-              height="50"
-              className="w-[3rem] object-contain"
-              alt=""
-            />
-            <p className="text-lg leading-tight font-medium">App Development</p>
-          </div>
-          <p className="desc">
-            Achieve Mobile Supremacy through Custom App Development Solutions
-          </p>
-        </div>
-        <div className="bg-[#0A1828] rounded-lg p-5">
-          <div className="flex items-center gap-3 mb-4">
-            <img
-              loading="lazy"
-              src={icon2}
-              width="50"
-              height="50"
-              className="w-[3rem] object-contain"
-              alt=""
-            />
-            <p className="text-lg leading-tight font-medium">Cloud Computing</p>
-          </div>
-          <p className="desc">
-            Scalable, secure cloud solutions to streamline operations and drive
-            agility.Integrity at Our Core
-          </p>
-        </div>
 
-        <div className="bg-tertiary rounded-lg p-5">
-          <div className="flex gap-3 mb-4">
-            <img
-              loading="lazy"
-              src={icon3}
-              width="50"
-              height="50"
-              className="w-[3rem] object-contain"
-              alt=""
-            />
-            <p className="text-lg leading-tight font-medium">
-              Website Development
-            </p>
-          </div>
-          <p className="desc">
-            Our full-stack development services provideend - to -end solutions
-          </p>
-        </div>
-      </div> */}
       <section className="text-white wrapper py-[3rem]">
         <div className="grid lg:grid-cols-2 gap-10 mt-7">
           <div data-aos="fade-up" className="hidden lg:block h-full">
