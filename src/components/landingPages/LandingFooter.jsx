@@ -9,17 +9,17 @@ import {
   Twitter,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 
 const LandingFooter = () => {
   return (
     <div className="py-[3rem]">
       <div className="wrapper flex lg:flex-row flex-col gap-7 justify-between">
         <div className="">
-          <Helmet>
-            {/* Preload the logo image */}
+          {/* Preload the logo image */}
+          {/* <Helmet>
             <link rel="preload" href={logoImg} as="image" type="image/png" />
-          </Helmet>
+          </Helmet> */}
           <img
             width="150"
             height="100"
