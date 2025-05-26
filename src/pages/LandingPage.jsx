@@ -135,6 +135,7 @@ const LandingPage = ({ page }) => {
         <div className="mt-5 grid sm:grid-cols-2 gap-6">
           {services.map((service) => (
             <div
+              key={service.id}
               data-aos="fade-up"
               className="bg-tertiary items-center rounded-lg p-5 flex text-center flex-col"
             >

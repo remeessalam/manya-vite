@@ -7,7 +7,7 @@ const PageBanner = lazy(() => import("../components/website/PageBanner"));
 const WebsiteFooter = lazy(() => import("../components/website/WebsiteFooter"));
 const LeadForm = lazy(() => import("../components/LeadForm"));
 
-const MapComponent = lazy(() => import("../components/website/MapComponent"));
+// const MapComponent = lazy(() => import("../components/website/MapComponent"));
 
 const ContactUs = () => {
   return (

@@ -79,7 +79,11 @@ function App() {
           <Routes>
             {/* Website pages */}
             {routes.map((route) => (
-              <Route path={route.path} element={route.element} />
+              <Route
+                key={route.name}
+                path={route.path}
+                element={route.element}
+              />
             ))}
 
             <Route path="*" element={<Navigate to="/" />} />

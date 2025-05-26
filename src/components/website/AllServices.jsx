@@ -25,6 +25,7 @@ const AllServices = () => {
       <div className="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {allServices.map((service) => (
           <div
+            key={service.id}
             data-aos="fade-up"
             className="bg-tertiary rounded-lg p-5 flex text-center flex-col justify-between"
           >
