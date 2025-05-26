@@ -16,14 +16,14 @@ import WhatsAppIcon from "./components/WhatsAppIcon";
 import { Toaster } from "react-hot-toast";
 import ServiceDetails from "./pages/ServiceDetails";
 import TermsAndConditions from "./pages/TermsandCondition";
-import AboutUs from "./pages/AboutUs";
-import ContactUs from "./pages/ContactUs";
-import Home from "./pages/Home";
-import Services from "./pages/Services";
-import Blogs from "./pages/Blogs";
 
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const ThankYou = lazy(() => import("./pages/ThankYou"));
+const AboutUs = lazy(() => import("./pages/AboutUs"));
+const ContactUs = lazy(() => import("./pages/ContactUs"));
+const Home = lazy(() => import("./pages/Home"));
+const Services = lazy(() => import("./pages/Services"));
+const Blogs = lazy(() => import("./pages/Blogs"));
 
 AOS.init({
   once: true,

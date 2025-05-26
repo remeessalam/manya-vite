@@ -1,8 +1,5 @@
 import logoImg from "./assets/logo/newlogo.webp";
-import AboutUs from "./pages/AboutUs";
-import ContactUs from "./pages/ContactUs";
-import Home from "./pages/Home";
-import Services from "./pages/Services";
+
 import {
   FaGlobe,
   FaMobileAlt,
