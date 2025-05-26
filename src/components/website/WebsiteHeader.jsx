@@ -2,7 +2,7 @@ import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-// import { logoImg } from "../../constant";
+import { logoImg } from "../../constant";
 import { X } from "lucide-react";
 // import { Helmet } from "react-helmet";
 
@@ -70,21 +70,21 @@ const WebsiteHeader = () => {
               // crossorigin="anonymous"
             />
           </Helmet> */}
-          {/* <Link
+          <Link
             aria-label="Home"
             // smooth={true}
             to="/"
             className="cursor-pointer"
           >
             <img
-              loading="lazy"
+              // loading="lazy"
               src={logoImg}
               width="150"
               height="100"
               className="h-[2.50rem] md:h-[3.75rem] md:scale-125 object-contain"
               alt="logo"
             />
-          </Link> */}
+          </Link>
           <div className="lg:flex items-center gap-10 hidden">
             {routes
               .filter((option) => option.name !== "Contact Us")

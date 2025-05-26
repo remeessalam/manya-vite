@@ -12,7 +12,7 @@ const WhatsAppIcon = () => {
       aria-label="Contact us on WhatsApp"
     >
       <img
-        loading="lazy"
+        // loading="lazy"
         src={WhatsApp}
         alt="whatsapp icon"
         className="w-[3rem] h-[3rem] sm:w-[4rem] sm:h-[4rem] fill-green-500 group-hover:fill-primary group-hover:scale-110 rounded-full shadow-transparent shadow-large group-hover:shadow-primary/50 transition-all duration-300"
