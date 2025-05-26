@@ -1,11 +1,14 @@
+import { lazy } from "react";
 import { Outlet } from "react-router-dom";
 
-import WebsiteHeader from "../components/website/WebsiteHeader";
-import WebsiteFooter from "../components/website/WebsiteFooter";
 import ScrollToTop from "../components/ScrollToTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import WhatsAppIcon from "../components/WhatsAppIcon";
+
+const WebsiteHeader = lazy(() => import("./WebsiteHeader"));
+const WebsiteFooter = lazy(() => import("./WebsiteFooter"));
+const WhatsAppIcon = lazy(() => import("../components/WhatsAppIcon"));
+
 const AppLayout = () => {
   AOS.init({
     once: true,

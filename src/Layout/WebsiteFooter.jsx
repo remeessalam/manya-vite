@@ -1,5 +1,4 @@
 import React from "react";
-import { companyDetails, logoImg } from "../../constant";
 import {
   ChevronRight,
   Instagram,
@@ -12,6 +11,7 @@ import {
 import { Link } from "react-router-dom";
 // import { Helmet } from "react-helmet";
 import { FaXTwitter } from "react-icons/fa6";
+import { companyDetails, logoImg } from "../constant";
 
 const WebsiteFooter = () => {
   const routes = [

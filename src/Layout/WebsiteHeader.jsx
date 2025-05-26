@@ -2,7 +2,7 @@ import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { logoImg } from "../../constant";
+import { logoImg } from "../constant";
 import { X } from "lucide-react";
 // import { Helmet } from "react-helmet";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import WebsiteHeader from "../components/website/WebsiteHeader";
+import WebsiteHeader from "../Layout/WebsiteHeader";
 import PageBanner from "../components/website/PageBanner";
 import SubHeading from "../components/SubHeading";
 import aboutImg1 from "../assets/images/aboutus-img1.webp";
