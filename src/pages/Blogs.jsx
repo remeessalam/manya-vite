@@ -16,6 +16,7 @@ const Blogs = () => {
               className="bg-white rounded-lg shadow-lg p-5 hover:shadow-xl transition duration-300"
             >
               <img
+                loading="lazy"
                 src={blog.img}
                 alt={blog.title}
                 className="w-full h-48 object-cover rounded-md mb-4"

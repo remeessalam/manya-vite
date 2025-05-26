@@ -77,6 +77,7 @@ const WebsiteHeader = () => {
             className="cursor-pointer"
           >
             <img
+              loading="lazy"
               src={logoImg}
               width="150"
               height="100"

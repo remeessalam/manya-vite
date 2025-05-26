@@ -45,6 +45,7 @@ const WebsiteFooter = () => {
             <link rel="preload" href={logoImg} as="image" type="image/png" />
           </Helmet> */}
           <img
+            loading="lazy"
             width="150"
             height="100"
             src={logoImg}

@@ -151,67 +151,7 @@ const AboutUs = () => {
         </div>
       </section>
       <WhyChooseUs />
-      {/* <section className="text-white wrapper py-[3rem]">
-        <div className="grid md:grid-cols-2 gap-10 mt-7">
-          <div
-            data-aos="fade-up"
-            className="flex h-full items-center lg:items-start flex-col gap-7"
-          >
-            <div className="flex flex-col items-center lg:items-start gap-5">
-              <SubHeading heading="Our Expert Team" />
-              <h2 className="heading-2">Meet Our Team</h2>
-              <p className="desc">
-                At <b>MANYA AI</b>, our team is at the heart of every
-                solution we provide. Combining expertise, innovation, and a deep
-                commitment to client success, our professionals are dedicated to
-                transforming complex challenges into seamless experiences. From
-                developers and designers to strategists and support specialists,
-                each team member brings unique skills that drive our mission
-                forward. Get to know the people powering the next generation of
-                digital solutions.
-              </p>
-            </div>
-          </div>
-          <div data-aos="fade-up" className="h-full w-full">
-            <div
-              className={`h-full grid gap-3 grid-cols-4
-            `}
-            >
-              {images.map((img, id) => (
-                <div
-                  className={`
-                    relative w-full h-full aspect-[4/5] rounded-xl overflow-hidden
-                    ${
-                      selectedImg === id
-                        ? "col-span-2 shadow-large shadow-primary/50"
-                        : "col-span-1"
-                    }
-                  `}
-                  key={id}
-                >
-                  {selectedImg !== id && (
-                    <div className="absolute top-0 w-full h-full bg-secondary/80 z-0"></div>
-                  )}
-                  <img
-                    loading="lazy"
-                    src={img}
-                    className="-z-10 h-full w-full object-cover"
-                    alt=""
-                  />
-                  {selectedImg === id && (
-                    <div className="rounded-lg absolute p-2 bottom-2 left-1/2 -translate-x-1/2 w-[90%] bg-tertiary text-center text-white">
-                      <h6 className="font-medium">Liam Smith</h6>
-                      <p className="text-primary text-[.8rem]">
-                        CEO & Co-Founder
-                      </p>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section> */}
+
       <Testimonials />
       <JoinHappyCustomers />
       <LeadForm />

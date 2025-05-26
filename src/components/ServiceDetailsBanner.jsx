@@ -5,6 +5,7 @@ const ServiceDetailsBanner = ({ banner, title }) => {
     <div className="pt-[5rem] md:pt-[7rem]">
       <div className="aspect-[6/4] md:aspect-[19/8] relative">
         <img
+          loading="lazy"
           src={banner}
           alt={title}
           className="w-full h-full object-cover object-center"

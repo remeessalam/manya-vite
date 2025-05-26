@@ -74,6 +74,7 @@ const WhyChooseUs = () => {
                   className="flex flex-col group items-center gap-3 bg-gradient-to-b from-[#179CC4] to-[#0f4a5d] rounded-xl p-5 transition-all duration-200"
                 >
                   <img
+                    loading="lazy"
                     src={item.icon}
                     alt=""
                     className="w-[3.5rem] fill-white h-[3.5rem] transition-all duration-200"
