@@ -6,36 +6,26 @@ import bannerImg from "../assets/images/banner.webp";
 import aboutImg from "../assets/images/aboutus-img3.webp";
 import { Link } from "react-router-dom";
 import SubHeading from "../components/SubHeading";
-// const WebsiteHeader = React.lazy(() =>
-//   import("../components/website/WebsiteHeader")
-// );
-// const TrustWorthySection = React.lazy(() =>
-//   import("../components/TrustWorthySection")
-// );
-// const Portfolio = React.lazy(() => import("../components/Portfolio"));
-// const Testimonials = React.lazy(() => import("../components/Testimonials"));
-// const JoinHappyCustomers = React.lazy(() =>
-//   import("../components/JoinHappyCustomers")
-// );
-// const WebsiteFooter = React.lazy(() =>
-//   import("../components/website/WebsiteFooter")
-// );
-// const AllServices = React.lazy(() =>
-//   import("../components/website/AllServices")
-// );
-// const OurValue = React.lazy(() => import("../components/website/OurValue"));
-// const WhyChooseUs = React.lazy(() => import("../components/WhyChooseUs"));
-// const LeadForm = React.lazy(() => import("../components/LeadForm"));
-import WebsiteHeader from "../components/website/WebsiteHeader";
-import TrustWorthySection from "../components/TrustWorthySection";
-import Portfolio from "../components/Portfolio";
-import Testimonials from "../components/Testimonials";
-import JoinHappyCustomers from "../components/JoinHappyCustomers";
-import WebsiteFooter from "../components/website/WebsiteFooter";
-import AllServices from "../components/website/AllServices";
-import OurValue from "../components/website/OurValue";
-import WhyChooseUs from "../components/WhyChooseUs";
-import LeadForm from "../components/LeadForm";
+const WebsiteHeader = React.lazy(() =>
+  import("../components/website/WebsiteHeader")
+);
+const TrustWorthySection = React.lazy(() =>
+  import("../components/TrustWorthySection")
+);
+const Portfolio = React.lazy(() => import("../components/Portfolio"));
+const Testimonials = React.lazy(() => import("../components/Testimonials"));
+const JoinHappyCustomers = React.lazy(() =>
+  import("../components/JoinHappyCustomers")
+);
+const WebsiteFooter = React.lazy(() =>
+  import("../components/website/WebsiteFooter")
+);
+const AllServices = React.lazy(() =>
+  import("../components/website/AllServices")
+);
+const OurValue = React.lazy(() => import("../components/website/OurValue"));
+const WhyChooseUs = React.lazy(() => import("../components/WhyChooseUs"));
+const LeadForm = React.lazy(() => import("../components/LeadForm"));
 
 const Home = () => {
   return (
