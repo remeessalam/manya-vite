@@ -6,9 +6,7 @@ import bannerImg from "../assets/images/banner.webp";
 import aboutImg from "../assets/images/aboutus-img3.webp";
 import { Link } from "react-router-dom";
 import SubHeading from "../components/SubHeading";
-const WebsiteHeader = React.lazy(() =>
-  import("../components/website/WebsiteHeader")
-);
+
 const TrustWorthySection = React.lazy(() =>
   import("../components/TrustWorthySection")
 );
@@ -17,9 +15,7 @@ const Testimonials = React.lazy(() => import("../components/Testimonials"));
 const JoinHappyCustomers = React.lazy(() =>
   import("../components/JoinHappyCustomers")
 );
-const WebsiteFooter = React.lazy(() =>
-  import("../components/website/WebsiteFooter")
-);
+
 const AllServices = React.lazy(() =>
   import("../components/website/AllServices")
 );
@@ -30,7 +26,6 @@ const LeadForm = React.lazy(() => import("../components/LeadForm"));
 const Home = () => {
   return (
     <>
-      <WebsiteHeader />
       <section className="h-screen relative text-white">
         <div className="absolute top-0 w-full h-full bg-secondary/90"></div>
         <img
@@ -138,7 +133,6 @@ const Home = () => {
       <Testimonials />
       <JoinHappyCustomers />
       <LeadForm />
-      <WebsiteFooter />
     </>
   );
 };

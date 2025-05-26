@@ -2,8 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import ServiceDetailsBanner from "../components/ServiceDetailsBanner";
 import { allServices } from "../constant";
-import WebsiteHeader from "../components/website/WebsiteHeader";
-import WebsiteFooter from "../components/website/WebsiteFooter";
+
 const LeadForm = React.lazy(() => import("../components/LeadForm"));
 
 const ServiceDetails = () => {
@@ -12,8 +11,6 @@ const ServiceDetails = () => {
 
   return (
     <>
-      <WebsiteHeader />
-
       <ServiceDetailsBanner
         banner={data.detailsPage.banner}
         title={data.title}
@@ -56,7 +53,6 @@ const ServiceDetails = () => {
       </div>
       {/* <Testimonials /> */}
       <LeadForm />
-      <WebsiteFooter />
     </>
   );
 };

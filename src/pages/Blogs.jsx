@@ -2,17 +2,10 @@ import React from "react";
 import { blogs } from "../data/blogs";
 import { Link } from "react-router-dom";
 
-const WebsiteHeader = React.lazy(() =>
-  import("../components/website/WebsiteHeader")
-);
-const WebsiteFooter = React.lazy(() =>
-  import("../components/website/WebsiteFooter")
-);
 const Blogs = () => {
   return (
     <div>
       {" "}
-      <WebsiteHeader />
       <div className="container mx-auto px-4 pt-[7rem] pb-10">
         <h1 className="text-3xl font-bold mb-8 text-center">Blogs</h1>
 
@@ -45,7 +38,6 @@ const Blogs = () => {
           ))}
         </div>
       </div>{" "}
-      <WebsiteFooter />
     </div>
   );
 };

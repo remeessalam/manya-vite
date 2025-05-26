@@ -5,6 +5,7 @@ import { appDevelopmentServices, webDevelopmentServices } from "../constant";
 import TrustWorthySection from "../components/TrustWorthySection";
 import appDevAboutImg from "../assets/images/landingpage/app-dev-about.webp";
 import webDevAboutImg from "../assets/images/landingpage/web-dev-about.webp";
+import AOS from "aos";
 
 const LandingHeader = lazy(() =>
   import("../components/landingPages/LandingHeader")
@@ -25,6 +26,11 @@ const WhyChooseUs = lazy(() => import("../components/WhyChooseUs"));
 
 const LandingPage = ({ page }) => {
   const isWebLanding = Boolean(page === "web-development");
+  AOS.init({
+    once: true,
+    duration: 1000,
+    offset: -10,
+  });
   let services;
   if (page === "web-development") {
     services = webDevelopmentServices;

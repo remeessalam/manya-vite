@@ -15,9 +15,7 @@ const Testimonials = React.lazy(() => import("../components/Testimonials"));
 const JoinHappyCustomers = React.lazy(() =>
   import("../components/JoinHappyCustomers")
 );
-const WebsiteFooter = React.lazy(() =>
-  import("../components/website/WebsiteFooter")
-);
+
 const WhyChooseUs = React.lazy(() => import("../components/WhyChooseUs"));
 const LeadForm = React.lazy(() => import("../components/LeadForm"));
 
@@ -34,7 +32,6 @@ const AboutUs = () => {
   // }, [imgChangeInterval]);
   return (
     <>
-      <WebsiteHeader />
       <PageBanner title="About Us" />
       <section className="text-white wrapper py-[3rem]">
         <div className="grid lg:grid-cols-2 gap-10 mt-7">
@@ -218,7 +215,6 @@ const AboutUs = () => {
       <Testimonials />
       <JoinHappyCustomers />
       <LeadForm />
-      <WebsiteFooter />
     </>
   );
 };

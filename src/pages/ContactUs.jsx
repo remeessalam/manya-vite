@@ -2,9 +2,7 @@ import React, { lazy } from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { companyDetails } from "../constant";
 import { Link } from "react-router-dom";
-const WebsiteHeader = lazy(() => import("../components/website/WebsiteHeader"));
 const PageBanner = lazy(() => import("../components/website/PageBanner"));
-const WebsiteFooter = lazy(() => import("../components/website/WebsiteFooter"));
 const LeadForm = lazy(() => import("../components/LeadForm"));
 
 // const MapComponent = lazy(() => import("../components/website/MapComponent"));
@@ -12,7 +10,6 @@ const LeadForm = lazy(() => import("../components/LeadForm"));
 const ContactUs = () => {
   return (
     <>
-      <WebsiteHeader />
       <PageBanner title="Contact Us" />
       <div className="py-[3rem]">
         <div className="wrapper">

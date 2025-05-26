@@ -1,13 +1,11 @@
 import React from "react";
 import { Info, Phone, Mail, MapPin } from "lucide-react";
-import WebsiteHeader from "../components/website/WebsiteHeader";
-import WebsiteFooter from "../components/website/WebsiteFooter";
+
 import { companyDetails } from "../constant";
 
 export default function TermsAndConditions() {
   return (
     <div className="overflow-x-hidden max-w-screen">
-      <WebsiteHeader />
       <div className="bg-gray-50 min-h-screen">
         {/* Header */}
         {/* <header className="bg-primary text-white shadow-md">
@@ -267,7 +265,6 @@ export default function TermsAndConditions() {
         </div>
       </footer> */}
       </div>
-      <WebsiteFooter />
     </div>
   );
 }

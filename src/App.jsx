@@ -1,4 +1,5 @@
 import {
+  createBrowserRouter,
   Navigate,
   Route,
   BrowserRouter as Router,
@@ -15,6 +16,7 @@ import { LoadingSpinner } from "./components/LoadingSpinner";
 import ScrollToTop from "./components/ScrollToTop";
 import WhatsAppIcon from "./components/WhatsAppIcon";
 import { Toaster } from "react-hot-toast";
+import AppLayout from "./Layout/AppLayout";
 
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const ThankYou = lazy(() => import("./pages/ThankYou"));
@@ -26,89 +28,99 @@ const Blogs = lazy(() => import("./pages/Blogs"));
 const ServiceDetails = lazy(() => import("./pages/ServiceDetails"));
 const TermsAndConditions = lazy(() => import("./pages/TermsandCondition"));
 
-AOS.init({
-  once: true,
-  duration: 1000,
-  easing: "ease-in-out-quart",
-  throttleDelay: 200,
-});
-
-function App() {
-  const routes = [
-    {
-      path: "/",
-      name: "Home",
-      element: <Home />,
-    },
-    {
-      path: "/about-us",
-      name: "About Us",
-      element: <AboutUs />,
-    },
-    {
-      path: "/services",
-      name: "Services",
-      element: <Services />,
-    },
-    {
-      path: "/blogs",
-      name: "Blogs",
-      element: <Blogs />,
-    },
-    {
-      path: "/contact-us",
-      name: "Contact Us",
-      element: <ContactUs />,
-    },
-  ];
-  return (
-    <Suspense fallback={<LoadingSpinner />}>
-      <SpinnerContextProvider>
-        <Router>
+const AppRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      // <LoadingSpinner />
+      <Suspense fallback={<LoadingSpinner />}>
+        <SpinnerContextProvider>
           <LoadingSpinnerContext />
-          <WhatsAppIcon />
-          <ScrollToTop />
           <Toaster
             position="top-bottom"
             toastOptions={{
               style: {
+                zIndex: "10000",
                 background: "#010C2A",
                 color: "#ffffff",
               },
             }}
           />
-          <Routes>
-            {/* Website pages */}
-            {routes.map((route) => (
-              <Route
-                key={route.name}
-                path={route.path}
-                element={route.element}
-              />
-            ))}
+          <AppLayout />
+        </SpinnerContextProvider>
+      </Suspense>
+    ),
 
-            <Route path="*" element={<Navigate to="/" />} />
-            <Route path="services/:title" element={<ServiceDetails />} />
-            <Route path="/thank-you" element={<ThankYou />} />
-            <Route
-              path="/terms-and-conditions"
-              element={<TermsAndConditions />}
-            />
-
-            {/* Landing pages */}
-            <Route
-              path="/web-development"
-              element={<LandingPage page={"web-development"} />}
-            />
-            <Route
-              path="/app-development"
-              element={<LandingPage page={"app-development"} />}
-            />
-          </Routes>
-        </Router>
-      </SpinnerContextProvider>
-    </Suspense>
-  );
-}
-
-export default App;
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs />,
+      },
+      {
+        path: "/services",
+        element: <Services />,
+      },
+      {
+        path: "/blogs",
+        element: <Blogs />,
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUs />,
+      },
+      {
+        path: "services/:title",
+        element: <ServiceDetails />,
+      },
+      {
+        path: "/thank-you",
+        element: <ThankYou />,
+      },
+      {
+        path: "/terms-and-conditions",
+        element: <TermsAndConditions />,
+      },
+    ],
+  },
+  {
+    path: "/web-development",
+    element: (
+      <Suspense fallback={<LoadingSpinner />}>
+        <Toaster
+          position="top-bottom"
+          toastOptions={{
+            style: {
+              zIndex: "10000",
+              background: "#010C2A",
+              color: "#ffffff",
+            },
+          }}
+        />
+        <LandingPage page={"web-development"} />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/app-development",
+    element: (
+      <Suspense fallback={<LoadingSpinner />}>
+        <Toaster
+          position="top-bottom"
+          toastOptions={{
+            style: {
+              zIndex: "10000",
+              background: "#010C2A",
+              color: "#ffffff",
+            },
+          }}
+        />
+        <LandingPage page={"app-development"} />
+      </Suspense>
+    ),
+  },
+]);
+export default AppRouter;
