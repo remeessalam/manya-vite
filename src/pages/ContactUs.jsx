@@ -4,6 +4,7 @@ import { companyDetails } from "../constant";
 import { Link } from "react-router-dom";
 const PageBanner = lazy(() => import("../components/website/PageBanner"));
 const LeadForm = lazy(() => import("../components/LeadForm"));
+// const WebsiteFooter = lazy(() => import("../Layout/WebsiteFooter"));
 
 const ContactUs = () => {
   return (
@@ -54,7 +55,7 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <WebsiteFooter />
+      {/* <WebsiteFooter /> */}
     </>
   );
 };
