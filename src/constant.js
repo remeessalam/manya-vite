@@ -350,7 +350,7 @@ export const allServices = [
   {
     id: 2,
     title: "App Development",
-    link: "app-development",
+    link: "application-development",
     icon: FaMobileAlt,
     desc: "Custom mobile application development for iOS and Android platforms that deliver exceptional user experiences and drive business growth.",
     detailsPage: {

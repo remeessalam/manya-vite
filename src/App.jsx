@@ -90,17 +90,19 @@ const AppRouter = createBrowserRouter([
     path: "/web-development",
     element: (
       <Suspense fallback={<LoadingSpinner />}>
-        <Toaster
-          position="top-bottom"
-          toastOptions={{
-            style: {
-              zIndex: "10000",
-              background: "#010C2A",
-              color: "#ffffff",
-            },
-          }}
-        />
-        <LandingPage page={"web-development"} />
+        <SpinnerContextProvider>
+          <Toaster
+            position="top-bottom"
+            toastOptions={{
+              style: {
+                zIndex: "10000",
+                background: "#010C2A",
+                color: "#ffffff",
+              },
+            }}
+          />
+          <LandingPage page={"web-development"} />
+        </SpinnerContextProvider>
       </Suspense>
     ),
   },
@@ -108,17 +110,19 @@ const AppRouter = createBrowserRouter([
     path: "/app-development",
     element: (
       <Suspense fallback={<LoadingSpinner />}>
-        <Toaster
-          position="top-bottom"
-          toastOptions={{
-            style: {
-              zIndex: "10000",
-              background: "#010C2A",
-              color: "#ffffff",
-            },
-          }}
-        />
-        <LandingPage page={"app-development"} />
+        <SpinnerContextProvider>
+          <Toaster
+            position="top-bottom"
+            toastOptions={{
+              style: {
+                zIndex: "10000",
+                background: "#010C2A",
+                color: "#ffffff",
+              },
+            }}
+          />
+          <LandingPage page={"app-development"} />{" "}
+        </SpinnerContextProvider>
       </Suspense>
     ),
   },
